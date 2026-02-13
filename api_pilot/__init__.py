@@ -3,4 +3,4 @@
 from .resolver import require
 
 __version__ = "0.1.0"
-__all__ = ["require"]אפשר גם
+__all__ = ["require"]
