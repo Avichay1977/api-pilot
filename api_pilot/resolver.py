@@ -14,7 +14,7 @@ class StrictModeError(Exception):
     pass
 
 
-def require(key_name, validate=False, strict=False):
+resolve_key(key_name, validate=False, strict=False):
     """
     Resolve API key from ENV -> .env -> vault.
     
@@ -109,3 +109,6 @@ def _validate_key(key_name, key_value):
     except ImportError:
         # validators not available, skip validation
         pass
+
+# Backward compatibility alias
+require = resolve_key
