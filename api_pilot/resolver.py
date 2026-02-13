@@ -14,7 +14,7 @@ class StrictModeError(Exception):
     pass
 
 
-resolve_key(key_name, validate=False, strict=False):
+def resolve_key(key_name, validate=False, strict=False):
     """
     Resolve API key from ENV -> .env -> vault.
     
